@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seer App — Six Instruments (concept)</title>
+<meta name="description" content="Seer App concept — the general explorer for every Seer market: search, filter and read across market types.">
+<meta property="og:title" content="Seer App — Six Instruments (concept)">
+<meta property="og:description" content="The general explorer for every Seer market: one search, every market type.">
+<meta property="og:image" content="https://muyouming.github.io/seer-six-instruments/preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230A0912'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%237C3AED'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="seer.css">
+</head>
+<body>
+<div class="backdrop" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Seer home"><span class="glyph" aria-hidden="true"></span>seer</a>
+    <nav class="links" aria-label="Ecosystem">
+      <a href="index.html">Home</a>
+      <a href="app.html" class="active" aria-current="page">App</a>
+      <a href="deep.html">Deep</a>
+      <a href="futarchy.html">Futarchy</a>
+      <a href="opportunity.html">Opportunity Markets</a>
+      <a href="risk.html">Risk Pricing</a>
+    </nav>
+    <div class="right">
+      <span class="chip">concept demo</span>
+      <button class="btn primary" type="button" title="Concept only — no wallet connection in this demo">Connect</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-head wrap">
+    <div class="eyebrow">Seer App · general explorer</div>
+    <h1>Every market. <span class="grad">One explorer.</span></h1>
+    <p class="lede">
+      Seer's equivalent of a block explorer — but for markets. Search, filter and read any
+      question across every market type without specialising in one: categorical,
+      multi-categorical, scalar and multi-scalar, on Ethereum and Gnosis.
+    </p>
+    <div class="stats" role="list" aria-label="Explorer statistics (illustrative)">
+      <div class="stat" role="listitem"><div class="v">1,284 <small>+42</small></div><div class="k">Markets open</div></div>
+      <div class="stat" role="listitem"><div class="v">$4.2M <small>+11%</small></div><div class="k">24h volume</div></div>
+      <div class="stat" role="listitem"><div class="v">3,617</div><div class="k">Resolved all-time</div></div>
+      <div class="stat" role="listitem"><div class="v">2</div><div class="k">Chains · Ethereum, Gnosis</div></div>
+    </div>
+  </section>
+
+  <section class="sec wrap">
+    <div class="eyebrow">All markets</div>
+    <div class="board">
+      <div class="b-head">
+        <div>
+          <div class="b-title">Open markets</div>
+          <div class="b-sub" id="count" aria-live="polite">10 of 10 shown</div>
+        </div>
+        <span class="chip">example data</span>
+      </div>
+
+      <div class="toolbar">
+        <div class="search-wrap">
+          <svg class="mag" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.6" stroke="currentColor" stroke-width="1.4"/><path d="m10.6 10.6 3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          <input id="q" type="search" placeholder="Search markets…" aria-label="Search markets">
+        </div>
+        <div class="fchips" role="group" aria-label="Filter by market type">
+          <button class="fchip active" type="button" data-f="all" aria-pressed="true">All types</button>
+          <button class="fchip" type="button" data-f="cat" aria-pressed="false">Categorical</button>
+          <button class="fchip" type="button" data-f="multi" aria-pressed="false">Multi-categorical</button>
+          <button class="fchip" type="button" data-f="scalar" aria-pressed="false">Scalar</button>
+          <button class="fchip" type="button" data-f="mscalar" aria-pressed="false">Multi-scalar</button>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data" id="markets">
+          <caption class="sr-only">Illustrative list of open Seer markets</caption>
+          <thead>
+            <tr>
+              <th scope="col">Market</th>
+              <th scope="col">Type</th>
+              <th scope="col" class="r">Price</th>
+              <th scope="col" class="r">24h</th>
+              <th scope="col" class="r sorted" aria-sort="descending">Volume ▾</th>
+              <th scope="col" class="r">Closes</th>
+              <th scope="col" class="r"><span class="sr-only">Action</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-type="cat">
+              <td><div class="q">ETH above $5,000 on 31 Dec 2026?</div><div class="qsub">Ethereum · oracle-resolved</div></td>
+              <td><span class="tag cat">Categorical</span></td>
+              <td class="n r">34.6%</td>
+              <td class="n r"><span class="delta pos">+2.1</span></td>
+              <td class="n r">$412k</td>
+              <td class="n r"><span class="muted">31 Dec 26</span></td>
+              <td class="r"><button class="btn ghost small" type="button" disabled title="Concept demo — no live trading">Trade</button></td>
+            </tr>
+            <tr data-type="scalar">
+              <td><div class="q">Gnosis Pay active accounts at the end of Q1 2027</div><div class="qsub">Gnosis · scalar range</div></td>
+              <td><span class="tag scalar">Scalar</span></td>
+              <td class="n r">188k–242k <span class="muted">mid 214k</span></td>
+              <td class="n r"><span class="delta pos">+1.4</span></td>
+              <td class="n r">$286k</td>
+              <td class="n r"><span class="muted">31 Mar 27</span></td>
+              <td class="r"><button class="btn ghost small" type="button" disabled title="Concept demo — no live trading">Trade</button></td>
+            </tr>
+            <tr data-type="multi">
+              <td><div class="q">Which 3 of 12 candidates join the Seer grants cohort?</div><div class="qsub">Gnosis · 12 outcomes · leader = highest price</div></td>
+              <td><span class="tag multi">Multi-cat</span></td>
+              <td class="n r">Leader 44% <span class="muted">top trio</span></td>
+              <td class="n r"><span class="delta pos">+6.3</span></td>
+              <td class="n r">$241k</td>
+              <td class="n r"><span class="muted">20 Nov 26</span></td>
+              <td class="r"><button class="btn ghost small" type="button" disabled title="Concept demo — no live trading">Trade</button></td>
+            </tr>
+            <tr data-type="scalar">
+              <td><div class="q">Seer cumulative traded volume during 2027</div><div class="qsub">Gnosis · scalar range</div></td>
+              <td><span class="tag scalar">Scalar</span></td>
+              <td class="n r">$40M–$72M <span class="muted">mid $56M</span></td>
+              <td class="n r"><span class="delta neg">−2.2</span></td>
+              <td class="n r">$198k</td>
+              <td class="n r"><span class="muted">31 Dec 27</span></td>
+              <td class="r"><button class="btn ghost small" type="button" disabled title="Concept demo — no live trading">Trade</button></td>
+            </tr>
+            <tr data-type="multi">
+              <td><div class="q">Most daily transactions by an L2 in Q1 2027 — 6 outcomes</div><div class="qsub">Ethereum · settles on chain data</div></td>
+              <td><span class="tag multi">Multi-cat</span></td>
+              <td class="n r">Leader 33%</td>
+              <td class="n r"><span class="delta pos">+0.8</span></td>
+              <td class="n r">$177k</td>
+              <td class="n r"><span class="muted">31 Mar 27</span></td>
+              <td class="r"><button class="btn ghost small" type="button" disabled title="Concept demo — no live trading">Trade</button></td>
+            </tr>
+            <tr data-type="cat">
+              <td><div class="q">Aave v3 oracle incident before Jan 2027?</div><div class="qsub">Ethereum · resolution committee reviewed</div></td>
+              <td><span class="tag cat">Categorical</span></td>
+              <td class="n r">6.2%</td>
+              <td class="n r"><span class="delta neg">−0.5</span></td>
+              <td class="n r">$154k</td>
+              <td class="n r"><span class="muted">31 Dec 26</span></td>
+              <td class="r"><button class="btn ghost small" type="button" disabled title="Concept demo — no live trading">Trade</button></td>
+            </tr>
+            <tr data-type="mscalar">
+              <td><div class="q">US CPI, year over year in Dec 2026 — outcome range</div><div class="qsub">Ethereum · fully independent of chain data</div></td>
+              <td><span class="tag mscalar">Multi-scalar</span></td>
+              <td class="n r">2.4–3.1% <span class="muted">mid 2.7%</span></td>
+              <td class="n r"><span class="delta pos">+0.2</span></td>
+              <td class="n r">$139k</td>
+              <td class="n r"><span class="muted">15 Jan 27</span></td>
+              <td class="r"><button class="btn ghost small" type="button" disabled title="Concept demo — no live trading">Trade</button></td>
+            </tr>
+            <tr data-type="cat">
+              <td><div class="q">ETH/BTC above 0.060 on 30 Jun 2027?</div><div class="qsub">Ethereum · price-feed resolved</div></td>
+              <td><span class="tag cat">Categorical</span></td>
+              <td class="n r">41.8%</td>
+              <td class="n r"><span class="delta pos">+1.1</span></td>
+              <td class="n r">$126k</td>
+              <td class="n r"><span class="muted">30 Jun 27</span></td>
+              <td class="r"><button class="btn ghost small" type="button" disabled title="Concept demo — no live trading">Trade</button></td>
+            </tr>
+            <tr data-type="multi">
+              <td><div class="q">Which two of six shortlisted grants get funded?</div><div class="qsub">Gnosis · 15 pair outcomes</div></td>
+              <td><span class="tag multi">Multi-cat</span></td>
+              <td class="n r">Top pair 28%</td>
+              <td class="n r"><span class="delta neg">−0.4</span></td>
+              <td class="n r">$98k</td>
+              <td class="n r"><span class="muted">20 Nov 26</span></td>
+              <td class="r"><button class="btn ghost small" type="button" disabled title="Concept demo — no live trading">Trade</button></td>
+            </tr>
+            <tr data-type="scalar">
+              <td><div class="q">Gnosis Beacon Chain validators at the end of Q4 2026</div><div class="qsub">Gnosis · scalar range</div></td>
+              <td><span class="tag scalar">Scalar</span></td>
+              <td class="n r">118k–126k <span class="muted">mid 122k</span></td>
+              <td class="n r"><span class="delta pos">+0.6</span></td>
+              <td class="n r">$71k</td>
+              <td class="n r"><span class="muted">31 Dec 26</span></td>
+              <td class="r"><button class="btn ghost small" type="button" disabled title="Concept demo — no live trading">Trade</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="empty" id="empty">No markets match that filter — clear the search or switch type.</p>
+      </div>
+      <div class="note">Shows 10 of 1,284 markets. Illustrative concept data — prices, volumes and names are examples; no live markets are connected.</div>
+    </div>
+  </section>
+</main>
+
+<nav class="wrap pager" aria-label="Browse the six interfaces">
+  <a href="index.html" class="prev">
+    <span class="pg-k">Previous · 01</span>
+    <span class="pg-t">Homepage</span>
+  </a>
+  <span class="hub"><i aria-hidden="true"></i>Instrument 02 of 06</span>
+  <a href="deep.html" class="next">
+    <span class="pg-k">Next · 03</span>
+    <span class="pg-t">Deep — many-outcome fields</span>
+  </a>
+</nav>
+
+<footer>
+  <div class="wrap foot">
+    <div class="about">
+      <a class="brand" href="index.html"><span class="glyph" aria-hidden="true"></span>seer</a>
+      <p>Concept for the Seer rebrand, starting from the Electric Foundation kit.
+         Built as static, self-contained demo pages by an autonomous agent.</p>
+    </div>
+    <div>
+      <h5>Interfaces</h5>
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="app.html" aria-current="page">Seer App</a></li>
+        <li><a href="deep.html">Deep</a></li>
+        <li><a href="futarchy.html">Futarchy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>More</h5>
+      <ul>
+        <li><a href="opportunity.html">Opportunity Markets</a></li>
+        <li><a href="risk.html">Risk Pricing</a></li>
+        <li><a href="index.html#fits">Architecture</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <span>Illustrative interface concepts. All prices, volumes and names shown are example data; no wallet is connected and no transactions are possible on these pages.</span>
+    <span>seer · six instruments — concept by pi-hunter, an autonomous agent</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var rows = Array.prototype.slice.call(document.querySelectorAll('#markets tbody tr'));
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.fchip[data-f]'));
+  var input = document.getElementById('q');
+  var empty = document.getElementById('empty');
+  var count = document.getElementById('count');
+  var cur = 'all';
+  function apply() {
+    var q = input.value.trim().toLowerCase();
+    var shown = 0;
+    rows.forEach(function (r) {
+      var okT = cur === 'all' || r.getAttribute('data-type') === cur;
+      var okQ = !q || r.textContent.toLowerCase().indexOf(q) !== -1;
+      var on = okT && okQ;
+      r.style.display = on ? '' : 'none';
+      if (on) shown++;
+    });
+    empty.style.display = shown ? 'none' : 'block';
+    count.textContent = shown + ' of 10 shown';
+  }
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      chips.forEach(function (x) { x.classList.remove('active'); x.setAttribute('aria-pressed', 'false'); });
+      c.classList.add('active');
+      c.setAttribute('aria-pressed', 'true');
+      cur = c.getAttribute('data-f');
+      apply();
+    });
+  });
+  input.addEventListener('input', apply);
+})();
+</script>
+</body>
+</html>

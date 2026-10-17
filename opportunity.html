@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Opportunity Markets — Six Instruments (concept)</title>
+<meta name="description" content="Opportunity Markets concept — traders forecast which submissions are likely to be selected, while the final call stays with reviewers.">
+<meta property="og:title" content="Opportunity Markets — Six Instruments (concept)">
+<meta property="og:description" content="A trading signal for reviewers; the selection decision stays human.">
+<meta property="og:image" content="https://muyouming.github.io/seer-six-instruments/preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230A0912'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%237C3AED'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="seer.css">
+</head>
+<body>
+<div class="backdrop" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Seer home"><span class="glyph" aria-hidden="true"></span>seer</a>
+    <nav class="links" aria-label="Ecosystem">
+      <a href="index.html">Home</a>
+      <a href="app.html">App</a>
+      <a href="deep.html">Deep</a>
+      <a href="futarchy.html">Futarchy</a>
+      <a href="opportunity.html" class="active" aria-current="page">Opportunity Markets</a>
+      <a href="risk.html">Risk Pricing</a>
+    </nav>
+    <div class="right">
+      <span class="chip">concept demo</span>
+      <button class="btn primary" type="button" title="Concept only — no wallet connection in this demo">Connect</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-head wrap">
+    <div class="eyebrow">Opportunity Markets · selection forecast</div>
+    <h1>Which submissions are likely to be selected?</h1>
+    <p class="lede">
+      Traders price the field: each entry on a board like this carries a market-implied
+      probability of being selected. It is a signal reviewers can weigh — the final
+      selection stays with them.
+    </p>
+    <div class="stats" role="list" aria-label="Board statistics (illustrative)">
+      <div class="stat" role="listitem"><div class="v">48</div><div class="k">Entries listed</div></div>
+      <div class="stat" role="listitem"><div class="v">27.0%</div><div class="k">Top implied probability</div></div>
+      <div class="stat" role="listitem"><div class="v">$66k</div><div class="k">24h volume</div></div>
+      <div class="stat" role="listitem"><div class="v">0 <small class="warn">by design</small></div><div class="k">Decisions made by this board</div></div>
+    </div>
+  </section>
+
+  <section class="sec wrap">
+    <div class="minis3">
+      <div class="mini-card">
+        <span class="k-label">What a price is</span>
+        <b>An expectation, not an outcome</b>
+        <p>A price of 27% says traders think selection is roughly one-in-four likely.
+           It never selects anything by itself.</p>
+      </div>
+      <div class="mini-card">
+        <span class="k-label">Who decides</span>
+        <b>Reviewers keep discretion</b>
+        <p>The panel reads the board the way it reads any other signal — one input among
+           criteria, context and judgement. The decision column stays open until they act.</p>
+      </div>
+      <div class="mini-card hl">
+        <span class="k-label">How to use it</span>
+        <b>Read the board, not one row</b>
+        <p>Selection is relative. A rank and a gap between neighbours carry more information
+           than any single probability quoted in isolation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap">
+    <div class="eyebrow">Selection board</div>
+    <div class="board">
+      <div class="b-head">
+        <div>
+          <div class="b-title">Submission selection · 48 entries</div>
+          <div class="b-sub">Ranked by market-implied probability · showing top 8</div>
+        </div>
+        <span class="chip">example data</span>
+      </div>
+
+      <div class="orow" style="border-top:0">
+        <span class="onum">#118</span>
+        <div class="oname"><b>Dark instrument system</b><span>Visual identity · 6 demo pages · candidacy priced</span></div>
+        <div class="obar"><div class="track"><div class="fill" style="width:90%"></div></div></div>
+        <span class="oprob">27.0%</span>
+        <span class="ovol">$21.2k <span class="delta pos">+4.0</span></span>
+        <span class="ostatus"><span class="status-open">reviewer decision: open</span></span>
+      </div>
+      <div class="orow">
+        <span class="onum">#104</span>
+        <div class="oname"><b>Light editorial concept</b><span>Visual identity · 6 demo pages · candidacy priced</span></div>
+        <div class="obar"><div class="track"><div class="fill" style="width:65%"></div></div></div>
+        <span class="oprob">19.4%</span>
+        <span class="ovol">$14.1k <span class="delta pos">+1.6</span></span>
+        <span class="ostatus"><span class="status-open">reviewer decision: open</span></span>
+      </div>
+      <div class="orow">
+        <span class="onum">#127</span>
+        <div class="oname"><b>Blueprint / schematic language</b><span>Visual identity · 6 demo pages · candidacy priced</span></div>
+        <div class="obar"><div class="track"><div class="fill" style="width:44%"></div></div></div>
+        <span class="oprob">13.2%</span>
+        <span class="ovol">$9.4k <span class="delta neg">−0.8</span></span>
+        <span class="ostatus"><span class="status-open">reviewer decision: open</span></span>
+      </div>
+      <div class="orow">
+        <span class="onum">#131</span>
+        <div class="oname"><b>Soft gradient ecosystem</b><span>Visual identity · 6 demo pages · candidacy priced</span></div>
+        <div class="obar"><div class="track"><div class="fill" style="width:33%"></div></div></div>
+        <span class="oprob">9.8%</span>
+        <span class="ovol">$8.1k <span class="delta pos">+2.2</span></span>
+        <span class="ostatus"><span class="status-open">reviewer decision: open</span></span>
+      </div>
+      <div class="orow">
+        <span class="onum">#112</span>
+        <div class="oname"><b>Neon brutalist identity</b><span>Visual identity · 6 demo pages · candidacy priced</span></div>
+        <div class="obar"><div class="track"><div class="fill" style="width:25%"></div></div></div>
+        <span class="oprob">7.6%</span>
+        <span class="ovol">$5.2k <span class="delta neg">−1.1</span></span>
+        <span class="ostatus"><span class="status-open">reviewer decision: open</span></span>
+      </div>
+      <div class="orow">
+        <span class="onum">#142</span>
+        <div class="oname"><b>Typographic mono system</b><span>Visual identity · 6 demo pages · candidacy priced</span></div>
+        <div class="obar"><div class="track"><div class="fill" style="width:18%"></div></div></div>
+        <span class="oprob">5.4%</span>
+        <span class="ovol">$3.8k <span class="delta pos">+0.6</span></span>
+        <span class="ostatus"><span class="status-open">reviewer decision: open</span></span>
+      </div>
+      <div class="orow">
+        <span class="onum">#138</span>
+        <div class="oname"><b>Paper-and-ink identity</b><span>Visual identity · 6 demo pages · candidacy priced</span></div>
+        <div class="obar"><div class="track"><div class="fill" style="width:13%"></div></div></div>
+        <span class="oprob">3.9%</span>
+        <span class="ovol">$2.6k <span class="delta neg">−0.3</span></span>
+        <span class="ostatus"><span class="status-open">reviewer decision: open</span></span>
+      </div>
+      <div class="orow">
+        <span class="onum">#149</span>
+        <div class="oname"><b>Kinetic grid concept</b><span>Visual identity · 6 demo pages · candidacy priced</span></div>
+        <div class="obar"><div class="track"><div class="fill" style="width:9%"></div></div></div>
+        <span class="oprob">2.8%</span>
+        <span class="ovol">$1.7k <span class="delta pos">+0.2</span></span>
+        <span class="ostatus"><span class="status-open">reviewer decision: open</span></span>
+      </div>
+      <div class="note">Entry names are anonymised placeholders; prices are independent estimates and more than one entry can be selected.
+        Illustrative concept data — 40 further entries each price below 2.8%.</div>
+    </div>
+
+    <div class="notice">
+      <span class="n-i" aria-hidden="true">i</span>
+      <p><b>The loop this board belongs to:</b> after a submission window closes, each eligible entry becomes an
+         outcome on a board like this one. Trading may help surface promising entries — then the team votes,
+         and the ranking is established by that vote, not by the prices.</p>
+    </div>
+  </section>
+</main>
+
+<nav class="wrap pager" aria-label="Browse the six interfaces">
+  <a href="futarchy.html" class="prev">
+    <span class="pg-k">Previous · 04</span>
+    <span class="pg-t">Futarchy — pass vs fail</span>
+  </a>
+  <span class="hub"><i aria-hidden="true"></i>Instrument 05 of 06</span>
+  <a href="risk.html" class="next">
+    <span class="pg-k">Next · 06</span>
+    <span class="pg-t">Risk Pricing — cross-protocol risk</span>
+  </a>
+</nav>
+
+<footer>
+  <div class="wrap foot">
+    <div class="about">
+      <a class="brand" href="index.html"><span class="glyph" aria-hidden="true"></span>seer</a>
+      <p>Concept for the Seer rebrand, starting from the Electric Foundation kit.
+         Built as static, self-contained demo pages by an autonomous agent.</p>
+    </div>
+    <div>
+      <h5>Interfaces</h5>
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="app.html">Seer App</a></li>
+        <li><a href="deep.html">Deep</a></li>
+        <li><a href="futarchy.html">Futarchy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>More</h5>
+      <ul>
+        <li><a href="opportunity.html" aria-current="page">Opportunity Markets</a></li>
+        <li><a href="risk.html">Risk Pricing</a></li>
+        <li><a href="index.html#fits">Architecture</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <span>Illustrative interface concepts. All prices, volumes and names shown are example data; no wallet is connected and no transactions are possible on these pages.</span>
+    <span>seer · six instruments — concept by pi-hunter, an autonomous agent</span>
+  </div>
+</footer>
+</body>
+</html>

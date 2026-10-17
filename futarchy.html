@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Futarchy — Six Instruments (concept)</title>
+<meta name="description" content="Futarchy concept — conditional markets forecast the same success measure if a proposal passes versus if it does not.">
+<meta property="og:title" content="Futarchy — Six Instruments (concept)">
+<meta property="og:description" content="Proposal #42 priced twice: if it passes, if it fails. The vote stays with the DAO.">
+<meta property="og:image" content="https://muyouming.github.io/seer-six-instruments/preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230A0912'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%237C3AED'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="seer.css">
+</head>
+<body>
+<div class="backdrop" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Seer home"><span class="glyph" aria-hidden="true"></span>seer</a>
+    <nav class="links" aria-label="Ecosystem">
+      <a href="index.html">Home</a>
+      <a href="app.html">App</a>
+      <a href="deep.html">Deep</a>
+      <a href="futarchy.html" class="active" aria-current="page">Futarchy</a>
+      <a href="opportunity.html">Opportunity Markets</a>
+      <a href="risk.html">Risk Pricing</a>
+    </nav>
+    <div class="right">
+      <span class="chip">concept demo</span>
+      <button class="btn primary" type="button" title="Concept only — no wallet connection in this demo">Connect</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-head wrap">
+    <div class="eyebrow">Futarchy · conditional markets</div>
+    <h1>What does success look like <span class="grad">if #42 passes — and if it does not?</span></h1>
+    <p class="lede">
+      The same success measure, priced twice: once conditional on the proposal passing, once
+      conditional on it failing. The difference is information for the DAO's decision — not
+      the decision itself.
+    </p>
+  </section>
+
+  <section class="sec wrap">
+    <div class="panel">
+      <div class="p-body proposal">
+        <div class="pp">
+          <div class="k-label">Open proposal · P-42</div>
+          <h3>Treasury diversification — 40% stablecoin glide</h3>
+          <p>Convert 40% of the ETH treasury into a stablecoin buffer over a six-month glide,
+             with quarterly rebalancing triggers. Success measure: 12-month protocol revenue.</p>
+        </div>
+        <div class="side">
+          <span class="chip violet">trading open</span>
+          <span class="chip">proposal by treasury-wg</span>
+        </div>
+      </div>
+      <div class="p-body" style="border-top:1px solid var(--line)">
+        <div class="timeline" aria-label="Proposal timeline">
+          <div class="tl-step done">
+            <div class="t-k2">Step 1 · proposed</div>
+            <b>14 Oct — proposal submitted</b>
+          </div>
+          <div class="tl-step active">
+            <div class="t-k2">Step 2 · trading</div>
+            <b>14–28 Oct — conditional markets open</b>
+          </div>
+          <div class="tl-step">
+            <div class="t-k2">Step 3 · vote</div>
+            <b>30 Oct — token holders decide</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panels2">
+      <div class="panel cond">
+        <div class="cond-k">
+          <span class="k-label">Conditional A</span>
+          <span class="chip violet">if it passes</span>
+        </div>
+        <h3>12-month protocol revenue</h3>
+        <div class="big">$18.4M <span>median estimate</span></div>
+        <div class="sub2">Probability of meeting the $15M target: <b style="color:var(--text)">71.8%</b> <span class="delta pos" style="font-family:var(--mono); font-size:12.5px">+1.2</span></div>
+        <div class="rangedar">
+          <div class="rd-track" role="img" aria-label="Revenue estimate range if the proposal passes: 12 to 26 million dollars, median 18.4 million, target 15 million">
+            <div class="rd-seg" style="left:20%; width:70%"></div>
+            <div class="rd-median" style="left:52%"></div>
+            <div class="rd-target" style="left:35%"><em>$15M target</em></div>
+          </div>
+          <div class="rd-axis"><span>$8M</span><span>$18M</span><span>$28M</span></div>
+        </div>
+      </div>
+
+      <div class="panel cond">
+        <div class="cond-k">
+          <span class="k-label">Conditional B</span>
+          <span class="chip">if it does not pass</span>
+        </div>
+        <h3>12-month protocol revenue</h3>
+        <div class="big">$16.1M <span>median estimate</span></div>
+        <div class="sub2">Probability of meeting the $15M target: <b style="color:var(--text)">64.2%</b> <span class="delta pos" style="font-family:var(--mono); font-size:12.5px">+3.1</span></div>
+        <div class="rangedar">
+          <div class="rd-track" role="img" aria-label="Revenue estimate range if the proposal does not pass: 11 to 22 million dollars, median 16.1 million, target 15 million">
+            <div class="rd-seg" style="left:15%; width:55%"></div>
+            <div class="rd-median" style="left:40.5%"></div>
+            <div class="rd-target" style="left:35%"><em>$15M target</em></div>
+          </div>
+          <div class="rd-axis"><span>$8M</span><span>$18M</span><span>$28M</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gapbar" role="status">
+      <div>
+        <div class="g-k">Market-implied effect of passing</div>
+        <div class="g-v">+$2.3M <span>median revenue</span> · +7.6pp <span>above the $15M target</span></div>
+      </div>
+      <span class="chip violet">gap readout</span>
+    </div>
+
+    <div class="notice">
+      <span class="n-i" aria-hidden="true">i</span>
+      <p><b>Information, not instruction.</b> Conditional markets forecast what the measure might look
+         like under each outcome. They inform the DAO's debate; the vote remains with token holders.</p>
+    </div>
+  </section>
+
+  <section class="sec wrap">
+    <div class="minis3">
+      <div class="mini-card">
+        <span class="k-label">Conditional design</span>
+        <b>Same measure, two worlds</b>
+        <p>Both panels resolve against the identical success measure and target, so the difference
+           between them isolates the proposal's expected effect.</p>
+      </div>
+      <div class="mini-card">
+        <span class="k-label">Reading the gap</span>
+        <b>Small gap, small edge</b>
+        <p>A wide positive gap says traders expect the proposal to help. A narrow gap says the market
+           sees little difference between the two futures.</p>
+      </div>
+      <div class="mini-card hl">
+        <span class="k-label">Decision layer</span>
+        <b>The vote stays human</b>
+        <p>Futarchy here produces a forecast, not an outcome. Governance keeps the final call and
+           answers to its own criteria.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<nav class="wrap pager" aria-label="Browse the six interfaces">
+  <a href="deep.html" class="prev">
+    <span class="pg-k">Previous · 03</span>
+    <span class="pg-t">Deep — many-outcome fields</span>
+  </a>
+  <span class="hub"><i aria-hidden="true"></i>Instrument 04 of 06</span>
+  <a href="opportunity.html" class="next">
+    <span class="pg-k">Next · 05</span>
+    <span class="pg-t">Opportunity Markets</span>
+  </a>
+</nav>
+
+<footer>
+  <div class="wrap foot">
+    <div class="about">
+      <a class="brand" href="index.html"><span class="glyph" aria-hidden="true"></span>seer</a>
+      <p>Concept for the Seer rebrand, starting from the Electric Foundation kit.
+         Built as static, self-contained demo pages by an autonomous agent.</p>
+    </div>
+    <div>
+      <h5>Interfaces</h5>
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="app.html">Seer App</a></li>
+        <li><a href="deep.html">Deep</a></li>
+        <li><a href="futarchy.html" aria-current="page">Futarchy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>More</h5>
+      <ul>
+        <li><a href="opportunity.html">Opportunity Markets</a></li>
+        <li><a href="risk.html">Risk Pricing</a></li>
+        <li><a href="index.html#fits">Architecture</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <span>Illustrative interface concepts. All prices, volumes and names shown are example data; no wallet is connected and no transactions are possible on these pages.</span>
+    <span>seer · six instruments — concept by pi-hunter, an autonomous agent</span>
+  </div>
+</footer>
+</body>
+</html>

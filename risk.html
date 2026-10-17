@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Risk Pricing — Six Instruments (concept)</title>
+<meta name="description" content="Risk Pricing concept — market estimates of default risk across DeFi protocols, compared side by side.">
+<meta property="og:title" content="Risk Pricing — Six Instruments (concept)">
+<meta property="og:description" content="Market-implied probability of default across protocols — read as a comparison, not a lone yes-or-no price.">
+<meta property="og:image" content="https://muyouming.github.io/seer-six-instruments/preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230A0912'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%237C3AED'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="seer.css">
+</head>
+<body>
+<div class="backdrop" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Seer home"><span class="glyph" aria-hidden="true"></span>seer</a>
+    <nav class="links" aria-label="Ecosystem">
+      <a href="index.html">Home</a>
+      <a href="app.html">App</a>
+      <a href="deep.html">Deep</a>
+      <a href="futarchy.html">Futarchy</a>
+      <a href="opportunity.html">Opportunity Markets</a>
+      <a href="risk.html" class="active" aria-current="page">Risk Pricing</a>
+    </nav>
+    <div class="right">
+      <span class="chip">concept demo</span>
+      <button class="btn primary" type="button" title="Concept only — no wallet connection in this demo">Connect</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-head wrap">
+    <div class="eyebrow">Risk Pricing · protocol risk estimates</div>
+    <h1>How much risk is each protocol carrying?</h1>
+    <p class="lede">
+      Market-implied probability of default over the next 12 months, one row per protocol.
+      Comparing estimates side by side shows where the market thinks downside concentrates —
+      instead of interpreting a single yes-or-no price in isolation.
+    </p>
+    <div class="stats" role="list" aria-label="Risk overview (illustrative)">
+      <div class="stat" role="listitem"><div class="v">12</div><div class="k">Protocols tracked</div></div>
+      <div class="stat" role="listitem"><div class="v">1.7%</div><div class="k">Median PD, next 12m</div></div>
+      <div class="stat" role="listitem"><div class="v">5.2%</div><div class="k">Highest estimate · Silo</div></div>
+      <div class="stat" role="listitem"><div class="v">−0.2pp</div><div class="k">Median quarter change</div></div>
+    </div>
+  </section>
+
+  <section class="sec wrap">
+    <div class="eyebrow">Cross-protocol estimate table</div>
+    <div class="board">
+      <div class="b-head">
+        <div>
+          <div class="b-title">Probability of default · next 12 months</div>
+          <div class="b-sub">Q4 2026 vintage · re-estimated quarterly</div>
+        </div>
+        <span class="chip">example data</span>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data">
+          <caption class="sr-only">Illustrative market-implied probability of default for twelve protocols</caption>
+          <thead>
+            <tr>
+              <th scope="col">Protocol</th>
+              <th scope="col" class="r sorted" aria-sort="descending">PD · next 12m ▾</th>
+              <th scope="col" class="r">Prev. quarter</th>
+              <th scope="col" class="r">Change</th>
+              <th scope="col" class="r">Trend · 7 quarters</th>
+              <th scope="col" class="r">Band</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="q">Silo</div><div class="qsub">Lending</div></td>
+              <td class="n r">5.2%</td>
+              <td class="n r"><span class="muted">4.4%</span></td>
+              <td class="n r"><span class="delta neg">+0.8</span></td>
+              <td><div class="spark" aria-hidden="true"><i class="bad" style="height:30%"></i><i class="bad" style="height:36%"></i><i class="bad" style="height:42%"></i><i class="bad" style="height:48%"></i><i class="bad" style="height:54%"></i><i class="bad" style="height:62%"></i><i class="bad" style="height:70%"></i></div></td>
+              <td class="r"><span class="band elevated">Elevated</span></td>
+            </tr>
+            <tr>
+              <td><div class="q">Gearbox</div><div class="qsub">Credit accounts</div></td>
+              <td class="n r">4.1%</td>
+              <td class="n r"><span class="muted">4.6%</span></td>
+              <td class="n r"><span class="delta pos">−0.5</span></td>
+              <td><div class="spark" aria-hidden="true"><i style="height:70%"></i><i style="height:66%"></i><i style="height:62%"></i><i style="height:58%"></i><i style="height:54%"></i><i style="height:50%"></i><i style="height:48%"></i></div></td>
+              <td class="r"><span class="band elevated">Elevated</span></td>
+            </tr>
+            <tr>
+              <td><div class="q">Fluid</div><div class="qsub">Lending</div></td>
+              <td class="n r">3.4%</td>
+              <td class="n r"><span class="muted">3.1%</span></td>
+              <td class="n r"><span class="delta neg">+0.3</span></td>
+              <td><div class="spark" aria-hidden="true"><i class="bad" style="height:42%"></i><i class="bad" style="height:44%"></i><i class="bad" style="height:47%"></i><i class="bad" style="height:49%"></i><i class="bad" style="height:52%"></i><i class="bad" style="height:54%"></i><i class="bad" style="height:56%"></i></div></td>
+              <td class="r"><span class="band elevated">Elevated</span></td>
+            </tr>
+            <tr>
+              <td><div class="q">EigenLayer</div><div class="qsub">Restaking</div></td>
+              <td class="n r">2.4%</td>
+              <td class="n r"><span class="muted">2.2%</span></td>
+              <td class="n r"><span class="delta neg">+0.2</span></td>
+              <td><div class="spark" aria-hidden="true"><i class="bad" style="height:46%"></i><i class="bad" style="height:48%"></i><i class="bad" style="height:50%"></i><i class="bad" style="height:52%"></i><i class="bad" style="height:54%"></i><i class="bad" style="height:56%"></i><i class="bad" style="height:58%"></i></div></td>
+              <td class="r"><span class="band moderate">Moderate</span></td>
+            </tr>
+            <tr>
+              <td><div class="q">Curve</div><div class="qsub">DEX</div></td>
+              <td class="n r">2.1%</td>
+              <td class="n r"><span class="muted">2.6%</span></td>
+              <td class="n r"><span class="delta pos">−0.5</span></td>
+              <td><div class="spark" aria-hidden="true"><i style="height:74%"></i><i style="height:70%"></i><i style="height:66%"></i><i style="height:62%"></i><i style="height:58%"></i><i style="height:56%"></i><i style="height:54%"></i></div></td>
+              <td class="r"><span class="band moderate">Moderate</span></td>
+            </tr>
+            <tr>
+              <td><div class="q">Aave v3</div><div class="qsub">Lending</div></td>
+              <td class="n r">1.8%</td>
+              <td class="n r"><span class="muted">2.4%</span></td>
+              <td class="n r"><span class="delta pos">−0.6</span></td>
+              <td><div class="spark" aria-hidden="true"><i style="height:66%"></i><i style="height:62%"></i><i style="height:58%"></i><i style="height:54%"></i><i style="height:50%"></i><i style="height:46%"></i><i style="height:44%"></i></div></td>
+              <td class="r"><span class="band moderate">Moderate</span></td>
+            </tr>
+            <tr>
+              <td><div class="q">Pendle</div><div class="qsub">Yield tokenisation</div></td>
+              <td class="n r">1.6%</td>
+              <td class="n r"><span class="muted">1.9%</span></td>
+              <td class="n r"><span class="delta pos">−0.3</span></td>
+              <td><div class="spark" aria-hidden="true"><i style="height:64%"></i><i style="height:60%"></i><i style="height:58%"></i><i style="height:56%"></i><i style="height:54%"></i><i style="height:52%"></i><i style="height:50%"></i></div></td>
+              <td class="r"><span class="band moderate">Moderate</span></td>
+            </tr>
+            <tr>
+              <td><div class="q">Rocket Pool</div><div class="qsub">Liquid staking</div></td>
+              <td class="n r">1.2%</td>
+              <td class="n r"><span class="muted">1.4%</span></td>
+              <td class="n r"><span class="delta pos">−0.2</span></td>
+              <td><div class="spark" aria-hidden="true"><i style="height:58%"></i><i style="height:56%"></i><i style="height:54%"></i><i style="height:52%"></i><i style="height:51%"></i><i style="height:50%"></i><i style="height:48%"></i></div></td>
+              <td class="r"><span class="band moderate">Moderate</span></td>
+            </tr>
+            <tr>
+              <td><div class="q">Morpho Blue</div><div class="qsub">Lending</div></td>
+              <td class="n r">0.9%</td>
+              <td class="n r"><span class="muted">1.1%</span></td>
+              <td class="n r"><span class="delta pos">−0.2</span></td>
+              <td><div class="spark" aria-hidden="true"><i style="height:58%"></i><i style="height:56%"></i><i style="height:54%"></i><i style="height:52%"></i><i style="height:50%"></i><i style="height:48%"></i><i style="height:46%"></i></div></td>
+              <td class="r"><span class="band low">Low</span></td>
+            </tr>
+            <tr>
+              <td><div class="q">Sky (Maker)</div><div class="qsub">CDP</div></td>
+              <td class="n r">0.8%</td>
+              <td class="n r"><span class="muted">0.7%</span></td>
+              <td class="n r"><span class="delta neg">+0.1</span></td>
+              <td><div class="spark" aria-hidden="true"><i class="bad" style="height:42%"></i><i class="bad" style="height:42%"></i><i class="bad" style="height:44%"></i><i class="bad" style="height:44%"></i><i class="bad" style="height:46%"></i><i class="bad" style="height:48%"></i><i class="bad" style="height:48%"></i></div></td>
+              <td class="r"><span class="band low">Low</span></td>
+            </tr>
+            <tr>
+              <td><div class="q">Spark</div><div class="qsub">Lending</div></td>
+              <td class="n r">0.7%</td>
+              <td class="n r"><span class="muted">0.8%</span></td>
+              <td class="n r"><span class="delta pos">−0.1</span></td>
+              <td><div class="spark" aria-hidden="true"><i style="height:52%"></i><i style="height:51%"></i><i style="height:50%"></i><i style="height:48%"></i><i style="height:47%"></i><i style="height:46%"></i><i style="height:45%"></i></div></td>
+              <td class="r"><span class="band low">Low</span></td>
+            </tr>
+            <tr>
+              <td><div class="q">Lido</div><div class="qsub">Liquid staking</div></td>
+              <td class="n r">0.4%</td>
+              <td class="n r"><span class="muted">0.5%</span></td>
+              <td class="n r"><span class="delta pos">−0.1</span></td>
+              <td><div class="spark" aria-hidden="true"><i style="height:50%"></i><i style="height:48%"></i><i style="height:46%"></i><i style="height:45%"></i><i style="height:44%"></i><i style="height:43%"></i><i style="height:42%"></i></div></td>
+              <td class="r"><span class="band low">Low</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="legend">
+        <span><i class="bar" style="background:#3DDC97"></i>Low · PD &lt; 1%</span>
+        <span><i class="bar" style="background:#F5B84B"></i>Moderate · 1–3%</span>
+        <span><i class="bar" style="background:#FB923C"></i>Elevated · 3–6%</span>
+        <span><i class="bar" style="background:#FF6B6B"></i>Critical · &gt; 6%</span>
+      </div>
+      <div class="note">Bands are read from the estimates on this page, not assigned by hand. Illustrative concept data — no live markets are connected.</div>
+    </div>
+  </section>
+
+  <section class="sec wrap">
+    <div class="minis3">
+      <div class="mini-card">
+        <span class="k-label">Why compare</span>
+        <b>A single price has no context</b>
+        <p>One yes-or-no market tells you a number. Twelve in one frame tell you where the market thinks
+           risk concentrates — and whether a protocol's estimate is an outlier in its category.</p>
+      </div>
+      <div class="mini-card">
+        <span class="k-label">What the number is</span>
+        <b>Market-implied PD, 12 months</b>
+        <p>Each estimate is priced continuously by traders. It is a forecast, not a rating, and it
+           re-estimates every quarter against the same event definition.</p>
+      </div>
+      <div class="mini-card hl">
+        <span class="k-label">Reading habit</span>
+        <b>Compare, then dig</b>
+        <p>Rank by band, check the quarter change, and only then open the underlying market.
+           The table is the entry point, not the answer.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<nav class="wrap pager" aria-label="Browse the six interfaces">
+  <a href="opportunity.html" class="prev">
+    <span class="pg-k">Previous · 05</span>
+    <span class="pg-t">Opportunity Markets</span>
+  </a>
+  <span class="hub"><i aria-hidden="true"></i>Instrument 06 of 06</span>
+  <a href="index.html" class="next">
+    <span class="pg-k">Back to · 01</span>
+    <span class="pg-t">Homepage — the protocol view</span>
+  </a>
+</nav>
+
+<footer>
+  <div class="wrap foot">
+    <div class="about">
+      <a class="brand" href="index.html"><span class="glyph" aria-hidden="true"></span>seer</a>
+      <p>Concept for the Seer rebrand, starting from the Electric Foundation kit.
+         Built as static, self-contained demo pages by an autonomous agent.</p>
+    </div>
+    <div>
+      <h5>Interfaces</h5>
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="app.html">Seer App</a></li>
+        <li><a href="deep.html">Deep</a></li>
+        <li><a href="futarchy.html">Futarchy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>More</h5>
+      <ul>
+        <li><a href="opportunity.html">Opportunity Markets</a></li>
+        <li><a href="risk.html" aria-current="page">Risk Pricing</a></li>
+        <li><a href="index.html#fits">Architecture</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <span>Illustrative interface concepts. All prices, volumes and names shown are example data; no wallet is connected and no transactions are possible on these pages.</span>
+    <span>seer · six instruments — concept by pi-hunter, an autonomous agent</span>
+  </div>
+</footer>
+</body>
+</html>

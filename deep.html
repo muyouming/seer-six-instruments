@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deep — Six Instruments (concept)</title>
+<meta name="description" content="Deep concept — many-outcome questions with large fields, sized for human analysts and AI agents.">
+<meta property="og:title" content="Deep — Six Instruments (concept)">
+<meta property="og:description" content="One question, 214 outcomes, priced continuously — with agent forecasts labelled and reviewable.">
+<meta property="og:image" content="https://muyouming.github.io/seer-six-instruments/preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230A0912'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%237C3AED'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="seer.css">
+</head>
+<body>
+<div class="backdrop" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Seer home"><span class="glyph" aria-hidden="true"></span>seer</a>
+    <nav class="links" aria-label="Ecosystem">
+      <a href="index.html">Home</a>
+      <a href="app.html">App</a>
+      <a href="deep.html" class="active" aria-current="page">Deep</a>
+      <a href="futarchy.html">Futarchy</a>
+      <a href="opportunity.html">Opportunity Markets</a>
+      <a href="risk.html">Risk Pricing</a>
+    </nav>
+    <div class="right">
+      <span class="chip">concept demo</span>
+      <button class="btn primary" type="button" title="Concept only — no wallet connection in this demo">Connect</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-head wrap">
+    <div class="eyebrow">Deep · many-outcome field</div>
+    <h1>Which of the 214 grant proposals advance?</h1>
+    <p class="lede">
+      One question with a large field of candidate outcomes, priced continuously. Designed for
+      human analysts and AI agents alike: agents can forecast how evaluators will assess the
+      field, and their forecasts are labelled and stay reviewable by humans.
+    </p>
+    <div class="stats" role="list" aria-label="Field statistics (illustrative)">
+      <div class="stat" role="listitem"><div class="v">214</div><div class="k">Outcomes tradeable</div></div>
+      <div class="stat" role="listitem"><div class="v">24</div><div class="k">Shown in field</div></div>
+      <div class="stat" role="listitem"><div class="v">$684k</div><div class="k">Field volume</div></div>
+      <div class="stat" role="listitem"><div class="v">6 <small class="warn">pending</small></div><div class="k">Agent forecasts</div></div>
+    </div>
+  </section>
+
+  <section class="sec wrap">
+    <div class="split">
+      <div class="panel field">
+        <div class="p-head">
+          <div>
+            <div class="p-title">Outcome field · top 24 of 214</div>
+            <div class="p-sub">Independent outcomes — several proposals can advance</div>
+          </div>
+          <div class="fchips" role="group" aria-label="Sort outcomes">
+            <button class="fchip active" type="button" data-sort="price" aria-pressed="true">By price</button>
+            <button class="fchip" type="button" data-sort="delta" aria-pressed="false">By 24h</button>
+            <button class="fchip" type="button" data-sort="name" aria-pressed="false">A–Z</button>
+          </div>
+        </div>
+        <div id="field-rows">
+          <div class="frow" data-p="14.2" data-d="0.8" data-name="G-0187 Verifiable randomness feed">
+            <span class="frank">01</span>
+            <div class="fname"><b>G-0187 · Verifiable randomness feed</b><span>Tooling · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:95%"></div></div></div>
+            <span class="fprob">14.2%</span>
+            <span class="fdelta delta pos">+0.8</span>
+          </div>
+          <div class="frow" data-p="11.8" data-d="1.2" data-name="G-0042 Retro funding simulator">
+            <span class="frank">02</span>
+            <div class="fname"><b>G-0042 · Retro funding simulator</b><span>Research · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:79%"></div></div></div>
+            <span class="fprob">11.8%</span>
+            <span class="fdelta delta pos">+1.2</span>
+          </div>
+          <div class="frow" data-p="9.6" data-d="-0.4" data-name="G-0201 ZK e-voting toolkit">
+            <span class="frank">03</span>
+            <div class="fname"><b>G-0201 · ZK e-voting toolkit</b><span>Governance · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:64%"></div></div></div>
+            <span class="fprob">9.6%</span>
+            <span class="fdelta delta neg">−0.4</span>
+          </div>
+          <div class="frow" data-p="8.9" data-d="0.3" data-name="G-0110 Wallet recovery standard">
+            <span class="frank">04</span>
+            <div class="fname"><b>G-0110 · Wallet recovery standard</b><span>Wallets · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:59%"></div></div></div>
+            <span class="fprob">8.9%</span>
+            <span class="fdelta delta pos">+0.3</span>
+          </div>
+          <div class="frow" data-p="7.4" data-d="0.6" data-name="G-0153 Onchain notifications relay">
+            <span class="frank">05</span>
+            <div class="fname"><b>G-0153 · Onchain notifications relay</b><span>Infra · <span class="agent-chip">agent · pending review</span></span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:49%"></div></div></div>
+            <span class="fprob">7.4%</span>
+            <span class="fdelta delta pos">+0.6</span>
+          </div>
+          <div class="frow" data-p="6.8" data-d="-0.2" data-name="G-0009 Gas abstraction paymasters">
+            <span class="frank">06</span>
+            <div class="fname"><b>G-0009 · Gas abstraction paymasters</b><span>Infra · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:45%"></div></div></div>
+            <span class="fprob">6.8%</span>
+            <span class="fdelta delta neg">−0.2</span>
+          </div>
+          <div class="frow" data-p="5.9" data-d="0.9" data-name="G-0164 Local-first indexer">
+            <span class="frank">07</span>
+            <div class="fname"><b>G-0164 · Local-first indexer</b><span>Data · <span class="agent-chip">agent · pending review</span></span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:39%"></div></div></div>
+            <span class="fprob">5.9%</span>
+            <span class="fdelta delta pos">+0.9</span>
+          </div>
+          <div class="frow" data-p="5.4" data-d="-0.7" data-name="G-0122 Cross-chain attestation bridge">
+            <span class="frank">08</span>
+            <div class="fname"><b>G-0122 · Cross-chain attestation bridge</b><span>Infra · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:36%"></div></div></div>
+            <span class="fprob">5.4%</span>
+            <span class="fdelta delta neg">−0.7</span>
+          </div>
+          <div class="frow" data-p="4.8" data-d="0.1" data-name="G-0077 Open-source SIEM">
+            <span class="frank">09</span>
+            <div class="fname"><b>G-0077 · Open-source SIEM</b><span>Security · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:32%"></div></div></div>
+            <span class="fprob">4.8%</span>
+            <span class="fdelta delta pos">+0.1</span>
+          </div>
+          <div class="frow" data-p="4.3" data-d="-0.3" data-name="G-0192 Quadratic voting library">
+            <span class="frank">10</span>
+            <div class="fname"><b>G-0192 · Quadratic voting library</b><span>Governance · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:29%"></div></div></div>
+            <span class="fprob">4.3%</span>
+            <span class="fdelta delta neg">−0.3</span>
+          </div>
+          <div class="frow" data-p="3.9" data-d="0.5" data-name="G-0051 P2P bandwidth market">
+            <span class="frank">11</span>
+            <div class="fname"><b>G-0051 · P2P bandwidth market</b><span>Networks · <span class="agent-chip">agent · pending review</span></span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:26%"></div></div></div>
+            <span class="fprob">3.9%</span>
+            <span class="fdelta delta pos">+0.5</span>
+          </div>
+          <div class="frow" data-p="3.5" data-d="0" data-name="G-0135 Non-transferable reputation protocol">
+            <span class="frank">12</span>
+            <div class="fname"><b>G-0135 · Non-transferable reputation protocol</b><span>Identity · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:23%"></div></div></div>
+            <span class="fprob">3.5%</span>
+            <span class="fdelta delta">0.0</span>
+          </div>
+          <div class="frow" data-p="3.1" data-d="-0.1" data-name="G-0028 Deterministic build farm">
+            <span class="frank">13</span>
+            <div class="fname"><b>G-0028 · Deterministic build farm</b><span>Tooling · <span class="agent-chip">agent · pending review</span></span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:21%"></div></div></div>
+            <span class="fprob">3.1%</span>
+            <span class="fdelta delta neg">−0.1</span>
+          </div>
+          <div class="frow" data-p="2.8" data-d="0.2" data-name="G-0148 FHE cost estimator">
+            <span class="frank">14</span>
+            <div class="fname"><b>G-0148 · FHE cost estimator</b><span>Research · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:19%"></div></div></div>
+            <span class="fprob">2.8%</span>
+            <span class="fdelta delta pos">+0.2</span>
+          </div>
+          <div class="frow" data-p="2.6" data-d="-0.4" data-name="G-0060 Offline payments mesh">
+            <span class="frank">15</span>
+            <div class="fname"><b>G-0060 · Offline payments mesh</b><span>Payments · <span class="agent-chip">agent · pending review</span></span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:17%"></div></div></div>
+            <span class="fprob">2.6%</span>
+            <span class="fdelta delta neg">−0.4</span>
+          </div>
+          <div class="frow" data-p="2.4" data-d="0.1" data-name="G-0173 Sustainable RPC funding">
+            <span class="frank">16</span>
+            <div class="fname"><b>G-0173 · Sustainable RPC funding</b><span>Infra · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:16%"></div></div></div>
+            <span class="fprob">2.4%</span>
+            <span class="fdelta delta pos">+0.1</span>
+          </div>
+          <div class="frow" data-p="2.2" data-d="-0.2" data-name="G-0094 Solidity static analysis">
+            <span class="frank">17</span>
+            <div class="fname"><b>G-0094 · Solidity static analysis</b><span>Security · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:15%"></div></div></div>
+            <span class="fprob">2.2%</span>
+            <span class="fdelta delta neg">−0.2</span>
+          </div>
+          <div class="frow" data-p="1.9" data-d="0.4" data-name="G-0018 Verifier language bindings">
+            <span class="frank">18</span>
+            <div class="fname"><b>G-0018 · Verifier language bindings</b><span>Tooling · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:13%"></div></div></div>
+            <span class="fprob">1.9%</span>
+            <span class="fdelta delta pos">+0.4</span>
+          </div>
+          <div class="frow" data-p="1.7" data-d="-0.1" data-name="G-0206 DA sampling dashboards">
+            <span class="frank">19</span>
+            <div class="fname"><b>G-0206 · DA sampling dashboards</b><span>Data · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:11%"></div></div></div>
+            <span class="fprob">1.7%</span>
+            <span class="fdelta delta neg">−0.1</span>
+          </div>
+          <div class="frow" data-p="1.5" data-d="0.3" data-name="G-0083 Public-goods accounting">
+            <span class="frank">20</span>
+            <div class="fname"><b>G-0083 · Public-goods accounting</b><span>Research · <span class="agent-chip">agent · pending review</span></span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:10%"></div></div></div>
+            <span class="fprob">1.5%</span>
+            <span class="fdelta delta pos">+0.3</span>
+          </div>
+          <div class="frow" data-p="1.3" data-d="-0.2" data-name="G-0119 Threshold signature recovery">
+            <span class="frank">21</span>
+            <div class="fname"><b>G-0119 · Threshold signature recovery</b><span>Wallets · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:9%"></div></div></div>
+            <span class="fprob">1.3%</span>
+            <span class="fdelta delta neg">−0.2</span>
+          </div>
+          <div class="frow" data-p="1.1" data-d="0.1" data-name="G-0037 Compiler fuzzing corpus">
+            <span class="frank">22</span>
+            <div class="fname"><b>G-0037 · Compiler fuzzing corpus</b><span>Security · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:7%"></div></div></div>
+            <span class="fprob">1.1%</span>
+            <span class="fdelta delta pos">+0.1</span>
+          </div>
+          <div class="frow" data-p="0.9" data-d="-0.1" data-name="G-0071 Peer-review tooling">
+            <span class="frank">23</span>
+            <div class="fname"><b>G-0071 · Peer-review tooling</b><span>Governance · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:6%"></div></div></div>
+            <span class="fprob">0.9%</span>
+            <span class="fdelta delta neg">−0.1</span>
+          </div>
+          <div class="frow" data-p="0.7" data-d="0.2" data-name="G-0055 Community translation pipeline">
+            <span class="frank">24</span>
+            <div class="fname"><b>G-0055 · Community translation pipeline</b><span>Community · first review round</span></div>
+            <div class="fbar"><div class="track"><div class="fill" style="width:5%"></div></div></div>
+            <span class="fprob">0.7%</span>
+            <span class="fdelta delta pos">+0.2</span>
+          </div>
+        </div>
+        <div class="legend">
+          <span><i class="bar"></i>Implied probability — independent outcomes</span>
+          <span><i class="dia"></i>Agent forecast · pending human review</span>
+          <span>Δ — change over 24h, in points</span>
+        </div>
+        <div class="note">Showing the top 24 of 214 tradeable outcomes. Illustrative concept data — no live markets are connected.</div>
+      </div>
+
+      <aside class="rail" aria-label="Field context">
+        <div class="panel">
+          <div class="p-head"><div class="p-title">Field summary</div><span class="chip">example</span></div>
+          <div class="p-body">
+            <div class="kv"><span class="k2">Median price</span><b>3.3%</b></div>
+            <div class="kv"><span class="k2">Top-5 block</span><b>51.9%</b></div>
+            <div class="kv"><span class="k2">Sum of shown prices</span><b>108.7%</b></div>
+            <div class="kv"><span class="k2">Field volume · 24h</span><b>$684k</b></div>
+          </div>
+          <div class="p-note">Sum reads as the expected number of advancing proposals from the shown field, not a single-winner split.</div>
+        </div>
+        <div class="panel">
+          <div class="p-head"><div class="p-title">Agent layer</div><span class="chip violet">6 pending</span></div>
+          <div class="p-body">
+            <p>Agents can trade and forecast in Deep the same way humans do. An agent forecast carries
+               the diamond marker and a <b>pending review</b> label until a human checks it; a human
+               price always sits underneath.</p>
+            <div class="kv"><span class="k2">Forecasts awaiting review</span><b>6</b></div>
+            <div class="kv"><span class="k2">Disputed so far</span><b>0</b></div>
+            <div class="kv"><span class="k2">Last human review</span><b>2h ago</b></div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="p-head"><div class="p-title">How to read</div></div>
+          <div class="p-body">
+            <ul class="plain">
+              <li>The bar is the implied probability a proposal advances. Outcomes are independent.</li>
+              <li>The delta is the 24h change in points, not percent.</li>
+              <li>The diamond marks agent forecasts that humans have not signed off on yet.</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<nav class="wrap pager" aria-label="Browse the six interfaces">
+  <a href="app.html" class="prev">
+    <span class="pg-k">Previous · 02</span>
+    <span class="pg-t">Seer App — the explorer</span>
+  </a>
+  <span class="hub"><i aria-hidden="true"></i>Instrument 03 of 06</span>
+  <a href="futarchy.html" class="next">
+    <span class="pg-k">Next · 04</span>
+    <span class="pg-t">Futarchy — pass vs fail</span>
+  </a>
+</nav>
+
+<footer>
+  <div class="wrap foot">
+    <div class="about">
+      <a class="brand" href="index.html"><span class="glyph" aria-hidden="true"></span>seer</a>
+      <p>Concept for the Seer rebrand, starting from the Electric Foundation kit.
+         Built as static, self-contained demo pages by an autonomous agent.</p>
+    </div>
+    <div>
+      <h5>Interfaces</h5>
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="app.html">Seer App</a></li>
+        <li><a href="deep.html" aria-current="page">Deep</a></li>
+        <li><a href="futarchy.html">Futarchy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>More</h5>
+      <ul>
+        <li><a href="opportunity.html">Opportunity Markets</a></li>
+        <li><a href="risk.html">Risk Pricing</a></li>
+        <li><a href="index.html#fits">Architecture</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <span>Illustrative interface concepts. All prices, volumes and names shown are example data; no wallet is connected and no transactions are possible on these pages.</span>
+    <span>seer · six instruments — concept by pi-hunter, an autonomous agent</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var container = document.getElementById('field-rows');
+  var rows = Array.prototype.slice.call(container.children);
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.fchip[data-sort]'));
+  function renumber() {
+    Array.prototype.forEach.call(container.children, function (r, i) {
+      var n = i + 1;
+      r.querySelector('.frank').textContent = (n < 10 ? '0' : '') + n;
+    });
+  }
+  function sortBy(mode) {
+    var sorted = rows.slice();
+    if (mode === 'price') sorted.sort(function (a, b) { return parseFloat(b.dataset.p) - parseFloat(a.dataset.p); });
+    if (mode === 'delta') sorted.sort(function (a, b) { return parseFloat(b.dataset.d) - parseFloat(a.dataset.d); });
+    if (mode === 'name') sorted.sort(function (a, b) { return a.dataset.name.localeCompare(b.dataset.name); });
+    sorted.forEach(function (r) { container.appendChild(r); });
+    renumber();
+  }
+  chips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      chips.forEach(function (x) { x.classList.remove('active'); x.setAttribute('aria-pressed', 'false'); });
+      c.classList.add('active');
+      c.setAttribute('aria-pressed', 'true');
+      sortBy(c.getAttribute('data-sort'));
+    });
+  });
+})();
+</script>
+</body>
+</html>
